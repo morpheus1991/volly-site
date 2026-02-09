@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Volly — External Monitor Volume, Made Easy</title>
-  <meta name="description" content="Control your external monitor's speaker volume right from your Mac. No more reaching for monitor buttons.">
+  <title>Volly — Fix Mac External Monitor Volume Control | HDMI, USB-C, DisplayPort</title>
+  <meta name="description" content="Mac volume keys not working with your external monitor? Volly fixes greyed out volume controls on HDMI, USB-C, and DisplayPort displays. Control monitor speaker volume with your keyboard.">
+  <meta name="keywords" content="mac external monitor volume, mac volume keys not working, HDMI volume control mac, external display volume greyed out, mac monitor speaker volume, DisplayPort volume control, USB-C monitor volume, macOS volume control fix, Mac mini external monitor audio, MacBook HDMI volume">
   <link rel="canonical" href="https://volly.space/">
-  <meta property="og:title" content="Volly — External Monitor Volume, Made Easy">
-  <meta property="og:description" content="Control your external monitor's speaker volume right from your Mac. No more reaching for monitor buttons.">
+  <meta property="og:title" content="Volly — Fix Mac External Monitor Volume Control">
+  <meta property="og:description" content="Mac volume keys not working with your external monitor? Volly fixes greyed out volume controls on HDMI, USB-C, and DisplayPort displays.">
   <meta property="og:url" content="https://volly.space/">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -423,6 +424,54 @@
       }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why are my Mac volume keys not working with my external monitor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "macOS disables volume control for audio sent over HDMI, DisplayPort, and Thunderbolt because these connections carry a fixed-level digital signal. Apple doesn't support CEC (Consumer Electronics Control), so your keyboard volume keys stop working. Volly bypasses this limitation entirely."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is my Mac volume slider greyed out with an external display?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "When your Mac outputs audio through an external monitor's speakers, macOS greys out the volume slider because it considers the audio stream fixed-volume. Volly creates a virtual audio device that restores full volume control — slider and keyboard keys both work."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Volly work with HDMI, USB-C, DisplayPort, and Thunderbolt monitors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Volly works with any external monitor regardless of the connection type — HDMI, USB-C, DisplayPort, or Thunderbolt. If your monitor has built-in speakers, Volly can control the volume."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's the difference between Volly and MonitorControl?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MonitorControl relies solely on DDC, which doesn't work on many monitors (especially M1 HDMI ports and certain Samsung/Dell models). Volly supports DDC when available, but also includes a software audio proxy — so volume control works even when DDC doesn't."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Volly work on Mac mini, MacBook Pro, MacBook Air, and iMac?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Volly works on any Mac running macOS 14 (Sonoma) or later, including Apple Silicon (M1, M2, M3, M4) and Intel Macs."
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -457,8 +506,10 @@
   <!-- Problem -->
   <section id="problem">
     <div class="container" style="text-align: center; max-width: 640px;">
-      <p style="font-size: 18px; color: var(--text-muted); line-height: 1.9; margin-bottom: 24px;">You plug in an external monitor, press the volume keys on your keyboard — and nothing happens. So you open the volume slider, only to find it's completely grayed out.</p>
-      <p style="font-size: 18px; color: var(--text-muted); line-height: 1.9; margin-bottom: 24px;">That frustration is exactly why we built Volly.</p>
+      <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 24px; letter-spacing: -0.02em;">Mac Volume Keys Not Working with External Monitor?</h2>
+      <p style="font-size: 18px; color: var(--text-muted); line-height: 1.9; margin-bottom: 24px;">You connect an external monitor via HDMI, USB-C, or DisplayPort, press the volume keys on your keyboard — and nothing happens. You open the volume slider, only to find it's completely greyed out.</p>
+      <p style="font-size: 17px; color: var(--text-muted); line-height: 1.9; margin-bottom: 24px;">macOS doesn't support volume control for most external display speakers. No matter what cable you use — HDMI, Thunderbolt, DisplayPort — the volume is locked.</p>
+      <p style="font-size: 18px; color: var(--text); line-height: 1.9;">That frustration is exactly why we built Volly.</p>
     </div>
   </section>
 
@@ -475,7 +526,7 @@
             <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
           </div>
           <h3>Monitor Volume Control</h3>
-          <p>Change your external monitor's volume without touching the monitor. Control it right from your Mac.</p>
+          <p>Control HDMI, USB-C, and DisplayPort monitor speaker volume directly from your Mac. No more reaching for tiny monitor buttons.</p>
         </div>
 
         <div class="feature-card">
@@ -483,7 +534,7 @@
             <svg viewBox="0 0 24 24"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>
           </div>
           <h3>Volume Keys Just Work</h3>
-          <p>Your keyboard volume keys work with your external monitor speakers — just like built-in speakers.</p>
+          <p>Mac volume keys greyed out? Not anymore. Your keyboard volume keys work with external monitor speakers — just like built-in speakers.</p>
         </div>
 
         <div class="feature-card">
@@ -526,6 +577,41 @@
         <div class="step">
           <h3>Use Your Volume Keys</h3>
           <p>Adjust volume with the slider or your keyboard volume keys — even for external monitor speakers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions</h2>
+
+      <div style="max-width: 640px; margin-top: 48px;">
+        <div style="margin-bottom: 32px;">
+          <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">Why are my Mac volume keys not working with my external monitor?</h3>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7;">macOS disables volume control for audio sent over HDMI, DisplayPort, and Thunderbolt because these connections carry a fixed-level digital signal. Apple doesn't support CEC (Consumer Electronics Control), so your keyboard volume keys simply stop working. Volly bypasses this limitation entirely.</p>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">Why is my Mac volume slider greyed out with an external display?</h3>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7;">When your Mac outputs audio through an external monitor's speakers, macOS greys out the volume slider because it considers the audio stream fixed-volume. Volly creates a virtual audio device that restores full volume control — slider and keyboard keys both work.</p>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">Does Volly work with HDMI, USB-C, DisplayPort, and Thunderbolt monitors?</h3>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7;">Yes. Volly works with any external monitor regardless of the connection type — HDMI, USB-C, DisplayPort, or Thunderbolt. If your monitor has built-in speakers, Volly can control the volume.</p>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">What's the difference between Volly and MonitorControl?</h3>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7;">MonitorControl relies solely on DDC, which doesn't work on many monitors (especially M1 HDMI ports and certain Samsung/Dell models). Volly supports DDC when available, but also includes a software audio proxy — so volume control works even when DDC doesn't.</p>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+          <h3 style="font-size: 16px; font-weight: 600; margin-bottom: 8px;">Does Volly work on Mac mini, MacBook Pro, MacBook Air, and iMac?</h3>
+          <p style="font-size: 14px; color: var(--text-muted); line-height: 1.7;">Yes. Volly works on any Mac running macOS 14 (Sonoma) or later, including Apple Silicon (M1, M2, M3, M4) and Intel Macs.</p>
         </div>
       </div>
     </div>
